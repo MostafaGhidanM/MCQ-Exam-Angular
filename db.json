@@ -1,0 +1,42 @@
+{
+  "students": [
+    {
+      "id": "cbb8",
+      "username": "Mostafa ",
+      "email": "Mostafa@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "a703",
+      "username": "Ahmed",
+      "email": "Ahmed@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "6d1c",
+      "username": "dsadsa",
+      "email": "dasda@dasdsa",
+      "password": "123"
+    },
+    {
+      "id": "2a02",
+      "username": "mostafa",
+      "email": "mostafa@email.com",
+      "password": "123"
+    }
+  ],
+  "doctor": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@email.com",
+      "password": "123"
+    }
+  ],
+  "login": [
+    {
+      "username": "Mostafa ",
+      "id": "1"
+    }
+  ]
+}
