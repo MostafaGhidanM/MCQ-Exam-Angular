@@ -39,7 +39,6 @@ export class LoginComponent implements OnInit {
     })
   }
   createForm() {
-    console.log(this.type)
     this.loginForm = this.fb.group({
       type: [this.type],
       email: ['', [Validators.required, Validators.email]],
@@ -48,8 +47,7 @@ export class LoginComponent implements OnInit {
 
   }
   submit() {
-    let index = this.users.findIndex((item: any) => item.email == this.loginForm.value.email && item.password == this.loginForm.value.password)
-    console.log(index)
+    let index = this.users.findIndex((item: any) => item.email == this.loginForm.value.email && (item.password == this.loginForm.value.password))
     if (index == -1) {
       this.toastr.error('الإيميل أو كلمة السر خطأ', "", {
         disableTimeOut: false,
@@ -62,11 +60,11 @@ export class LoginComponent implements OnInit {
     } else {
       const model = {
         username: this.users[index].username,
-        type: this.users[index].type
+        role: this.type
       }
 
       this.authService.login(model).subscribe(res => {
-        console.log(model)
+        this.authService.user.next(res)
         this.toastr.success('تم تسجيل الدخول بنجاح', "", {
           disableTimeOut: false,
           titleClass: 'toastr_title',
@@ -76,7 +74,7 @@ export class LoginComponent implements OnInit {
         }
         )
         this.router.navigate(['/subjects'])
-      }, error => console.log(error.error.message))
+      }, error => { })
 
     }
 
