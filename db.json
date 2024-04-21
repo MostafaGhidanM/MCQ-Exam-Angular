@@ -33,8 +33,48 @@
       "password": "123"
     }
   ],
+  "subjects": [
+    {
+      "id": "d616",
+      "name": "اللغة العربية",
+      "questions": [
+        {
+          "question": "مفرد كلمة أشجار",
+          "answer1": "شجرة",
+          "answer2": "شجيرة",
+          "answer3": "شاجرة",
+          "answer4": "شجور",
+          "correctAnswer": "شجرة"
+        },
+        {
+          "question": "جمع كلمة بلبل",
+          "answer1": "بلابل",
+          "answer2": "بلابيل",
+          "answer3": "بلبلات",
+          "answer4": "أبلال",
+          "correctAnswer": "بلابل"
+        }
+      ]
+    },
+    {
+      "id": "2e6c",
+      "name": "اللغة العربية",
+      "questions": [
+        {
+          "question": "2-2",
+          "answer1": "22",
+          "answer2": "0",
+          "answer3": "21",
+          "answer4": "2",
+          "correctAnswer": "0"
+        }
+      ]
+    }
+  ],
   "login": [
     {
+      "username": "admin",
+      "role": "doctor",
       "id": "1"
     }
   ]
